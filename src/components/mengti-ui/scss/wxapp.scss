@@ -1,0 +1,36 @@
+/*
+	WEB端入口文件
+ */
+@import './_mixins.scss';
+@import './_functions.scss';
+@import './_layouts.scss';
+/* @import './_iconfont.scss'; */
+
+// -> components
+
+// ---> button
+@import './components/button.scss';
+// ---> dialog
+@import './components/dialog.scss';
+// ---> bar
+@import './components/bar.scss';
+// ---> list
+@import './components/list.scss';
+@import './components/card.scss';
+@import './components/form.scss';
+@import './components/common.scss';
+
+
+
+// 业务组件
+@import './yewu/goods.scss';
+
+// common reset
+page {
+	color: $color;
+	font-size: px(28);
+}
+
+.M-gb-click {
+	cursor: default;
+}

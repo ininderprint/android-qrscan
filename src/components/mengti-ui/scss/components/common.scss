@@ -1,0 +1,17 @@
+@import '../_functions.scss';
+@import '../_vars.scss';
+@import '../_mixins.scss';
+
+.mt-content-title {
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: px(28);
+  padding: px(24) px(24) px(16) px(24);
+  color: #777;
+  + .mt-list, + .mt-content-block, +.mt-card {
+	margin-top: 0px;
+  }
+}

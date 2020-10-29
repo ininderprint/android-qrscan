@@ -1,0 +1,21 @@
+/*
+	WEB端入口文件
+ */
+@import './_mixins.scss';
+@import './_functions.scss';
+@import './_layouts.scss';
+@import './weapp_font';
+/*
+	@import './_iconfont_wx';
+*/
+@import './_animate.scss';
+/* reset */
+@import './_reset.scss';
+
+/* components */
+
+/* button */
+@import './components/button.scss';
+/* dialog */
+/* bar */
+@import './components/bar.scss';

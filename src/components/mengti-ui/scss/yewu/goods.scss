@@ -1,0 +1,97 @@
+/*
+  商品组件样式
+ */
+
+@import '../_functions.scss';
+
+.sc-goods {
+  min-height: px(100);
+
+  &__list {
+    line-height: 1;
+    box-sizing: border-box;
+    width: 100%;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+  }
+
+  &__body {
+    width: 50%;
+    float: left;
+    margin-left: 0;
+    margin-bottom: px(12);
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      padding-right: px(8);
+    }
+    &:nth-child(even) {
+      padding-left: px(8);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    border-radius: px(20);
+    overflow: hidden;
+  }
+
+
+  &__image {
+    width: 100%;
+    height: px(360);
+    background-color: #fff;
+
+    &>img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__content {
+    background: #fff;
+  }
+
+  &__info {}
+  &__title {
+    padding: px(10) px(10) 0 px(10);
+    line-height: 1.3em;
+    font-size: px(24);
+    height: px(70);
+    box-sizing: border-box;
+    color: #666;
+  }
+  &__price {
+    font-size: px(30);
+    height: px(54);
+    color: red;
+    padding: 0 0 px(10) px(10);
+    box-sizing: border-box;
+  }
+  &__cart {
+    padding-right: px(10);
+    padding-bottom: px(10);
+
+    &-button {
+      width: 25PX;
+      height: 25PX;
+      border-radius: 50%;
+      color: #fff;
+      background: #41c56d;
+
+      .mtapp-font {
+        display: block;
+        width: 14PX;
+        height: 14PX;
+        font-size: 14PX;
+        line-height: 1;
+      }
+    }
+  }
+}

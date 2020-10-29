@@ -1,0 +1,42 @@
+/*
+ * @example
+// <view class="mt-dialog {{ showDialog ? 'mt-dialog--show' : '' }}" style="z-index: 1001;">
+// <view class="mt-dialog__mask" bindtap="closeModal"/>
+// <view class="mt-dialog__container">
+//   <view style="padding: 100px 0; text-align: center;">Dialog内容</view>
+// </view>
+// </view>
+*/
+
+.mt-dialog{
+
+  &__mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  &__container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 750rpx;
+    background: white;
+    transform: translateY(150%);
+    transition: all 0.4s ease;
+    z-index: 11;
+  }
+  &--show {
+
+    .mt-dialog__container {
+      transform: translateY(0);
+    }
+    .mt-dialog__mask {
+      display: block;
+    }
+  }
+}

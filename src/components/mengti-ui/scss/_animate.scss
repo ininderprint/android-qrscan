@@ -1,0 +1,226 @@
+/*
+缩放
+*/
+
+@keyframes zoom-in-out-enter {
+  from {
+    opacity: 0;
+    transform: scale(0) translate3d(0, 0, 0.1)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoom-in-out-leave {
+  from {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0) translate3d(0, 0, 0.1);
+  }
+}
+
+@-webkit-keyframes zoom-in-out-enter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0) translate3d(0, 0, 0.1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes zoom-in-out-leave {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0) translate3d(0, 0, 0.1);
+  }
+}
+
+.zoom-in-out-enter-active {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: zoom-in-out-enter;
+}
+
+.zoom-in-out-leave-active {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: zoom-in-out-leave;
+}
+
+.zoom-in-out-leave-left-bottom-enter-active {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: zoom-in-out-enter;
+  -webkit-animation-name: zoom-in-out-enter;
+  transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+}
+
+.zoom-in-out-leave-left-bottom-leave-active {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: zoom-in-out-leave;
+  transform-origin: right bottom;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: zoom-in-out-leave;
+  -webkit-transform-origin: right bottom;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 1s;
+}
+
+.list-enter,
+.list-leave-active {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* material */
+
+@-webkit-keyframes material-in-out-enter {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 56px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes material-in-out-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 156px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes material-in-out-leave {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 156px, 0);
+  }
+}
+
+@keyframes material-in-out-leave {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 56px, 0);
+  }
+}
+
+@-webkit-keyframes material-in-center {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes material-in-center {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.material-in-out-enter-active {
+  -webkit-animation: material-in-out-enter 400ms forwards;
+  -o-animation: material-in-out-enter 400ms forwards;
+  animation: material-in-out-enter 400ms forward
+}
+
+.material-in-out-leave-active {
+  -webkit-animation: material-in-out-leave 400ms forwards;
+  -o-animation: material-in-out-leave 400ms forwards;
+  animation: material-in-out-leave 400ms forward
+}
+
+/* material */
+
+@-webkit-keyframes material-left-in-right-out-enter {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes material-left-in-right-out-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes material-left-in-right-out-leave {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+  }
+}
+
+@keyframes material-left-in-right-out-leave {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+}
+
+.material-left-in-right-out-enter-active {
+  -webkit-animation: material-left-in-right-out-enter 400ms forwards;
+  -o-animation: material-left-in-right-out-enter 400ms forwards;
+  animation: material-left-in-right-out-enter 400ms forwards;
+}
+
+.material-left-in-right-out-leave-active {
+  -webkit-animation: material-left-in-right-out-leave 400ms forwards;
+  -o-animation: material-left-in-right-out-leave 400ms forwards;
+  animation: material-left-in-right-out-leave 400ms forwards;
+}
